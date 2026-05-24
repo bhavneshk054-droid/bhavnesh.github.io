@@ -1,44 +1,61 @@
-<section class="bg-dark text-white text-center py-5">
+<!-- HERO SECTION -->
+<section class="hero-section text-white text-center d-flex align-items-center">
 
     <div class="container">
 
-        <h1 class="display-3 fw-bold">
+        <h1 class="display-2 fw-bold hero-title">
             Hi, I'm Bhavnesh
         </h1>
 
-        <p class="lead mt-3">
-            Python Developer | Django Developer | MySQL 
+        <p class="lead mt-4 hero-text">
+            Python Developer | Django Developer | MySQL
         </p>
 
-        <a href="/contact/" class="btn btn-primary btn-lg mt-3">
+        <a href="/contact/" class="btn hire-btn btn-lg mt-4">
             Hire Me
+        </a>
+
+        <a href="https://github.com/bhavneshk054-droid"
+           target="_blank"
+           class="btn github-btn btn-lg mt-4 ms-3">
+           GitHub
         </a>
 
     </div>
 
 </section>
-<section class="py-5 bg-light">
+
+<!-- SKILLS SECTION -->
+<section class="skills-section py-5">
 
     <div class="container text-center">
 
-        <h2 class="mb-5">My Skills</h2>
+        <h2 class="section-title mb-5">My Skills</h2>
 
-        <div class="row">
+        <div class="row g-4">
 
             <div class="col-md-3">
-                <h4>Python</h4>
+                <div class="skill-card">
+                    <h4>Python</h4>
+                </div>
             </div>
 
             <div class="col-md-3">
-                <h4>Django</h4>
+                <div class="skill-card">
+                    <h4>Django</h4>
+                </div>
             </div>
 
             <div class="col-md-3">
-                <h4>Bootstrap</h4>
+                <div class="skill-card">
+                    <h4>Bootstrap</h4>
+                </div>
             </div>
 
             <div class="col-md-3">
-                <h4>MySQL</h4>
+                <div class="skill-card">
+                    <h4>MySQL</h4>
+                </div>
             </div>
 
         </div>
@@ -47,23 +64,164 @@
 
 </section>
 
-</div>
-<style>
-.card:hover{
-    transform: translateY(-10px);
-    transition: 0.4s;
-}
-</style>
-<footer class="bg-dark text-white text-center p-4">
+<!-- FOOTER -->
+<footer class="footer-section text-center">
 
-  <h4>About Me</h4>    
+    <h4>About Me</h4>
 
     <p>
-      Bhavnesh kumar | Python Developer
+        Bhavnesh Kumar | Python Developer
     </p>
 
 </footer>
-<a href="https://github.com/bhavneshk054-droid"
-   class="btn btn-outline-light">
-   GitHub
-</a>
+
+<!-- CSS -->
+<style>
+
+/* BODY */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fc;
+}
+
+/* HERO SECTION */
+.hero-section{
+    height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title{
+    font-size: 70px;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease;
+}
+
+.hero-text{
+    font-size: 24px;
+    color: #dbeafe;
+    animation: fadeInUp 1.2s ease;
+}
+
+/* BUTTONS */
+.hire-btn{
+    background: #00b894;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.hire-btn:hover{
+    background: #019875;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.github-btn{
+    border-radius: 50px;
+    padding: 14px 35px;
+    font-weight: bold;
+    border: 2px solid white;
+    color: white;
+    transition: 0.4s;
+}
+
+.github-btn:hover{
+    background: white;
+    color: black;
+    transform: translateY(-5px);
+}
+
+/* SKILLS SECTION */
+.skills-section{
+    background: #ffffff;
+}
+
+.section-title{
+    font-size: 45px;
+    font-weight: bold;
+    color: #0f172a;
+}
+
+.skill-card{
+    background: white;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.skill-card h4{
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.skill-card:hover{
+    transform: translateY(-12px) scale(1.05);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.skill-card:hover h4{
+    color: white;
+}
+
+/* FOOTER */
+.footer-section{
+    background: #0f172a;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-section h4{
+    font-weight: bold;
+}
+
+.footer-section p{
+    color: #cbd5e1;
+}
+
+/* ANIMATION */
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+    .hero-title{
+        font-size: 45px;
+    }
+
+    .hero-text{
+        font-size: 18px;
+    }
+
+    .section-title{
+        font-size: 35px;
+    }
+
+}
+
+</style>
