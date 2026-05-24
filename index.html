@@ -1,65 +1,60 @@
-<section class="hero-section">
+<!-- HERO SECTION -->
+<section class="hero-section text-white text-center d-flex align-items-center">
 
-    <div class="container text-center hero-content">
+    <div class="container">
 
-        <h1 class="hero-title">
-            Bhavnesh Kumar
+        <h1 class="display-2 fw-bold hero-title">
+            Hi, I'm Bhavnesh
         </h1>
 
-        <p class="hero-subtitle">
-            Python Developer • Django Developer • MySQL
+        <p class="lead mt-4 hero-text">
+            Python Developer | Django Developer | MySQL
         </p>
 
-        <div class="mt-4">
+        <a href="/contact/" class="btn hire-btn btn-lg mt-4">
+            Hire Me
+        </a>
 
-            <a href="/contact/" class="btn custom-btn">
-                Hire Me
-            </a>
-
-            <a href="https://github.com/bhavneshk054-droid"
-               target="_blank"
-               class="btn custom-btn-outline ms-3">
-               GitHub
-            </a>
-
-        </div>
+        <a href="https://github.com/bhavneshk054-droid"
+           target="_blank"
+           class="btn github-btn btn-lg mt-4 ms-3">
+           GitHub
+        </a>
 
     </div>
 
 </section>
 
-<!-- SKILLS -->
-<section class="skills-section">
+<!-- SKILLS SECTION -->
+<section class="skills-section py-5">
 
-    <div class="container">
+    <div class="container text-center">
 
-        <h2 class="section-heading text-center">
-            My Skills
-        </h2>
+        <h2 class="section-title mb-5">My Skills</h2>
 
-        <div class="row mt-5 g-4">
+        <div class="row g-4">
 
             <div class="col-md-3">
-                <div class="skill-box">
-                    <h3>Python</h3>
+                <div class="skill-card">
+                    <h4>Python</h4>
                 </div>
             </div>
 
             <div class="col-md-3">
-                <div class="skill-box">
-                    <h3>Django</h3>
+                <div class="skill-card">
+                    <h4>Django</h4>
                 </div>
             </div>
 
             <div class="col-md-3">
-                <div class="skill-box">
-                    <h3>Bootstrap</h3>
+                <div class="skill-card">
+                    <h4>Bootstrap</h4>
                 </div>
             </div>
 
             <div class="col-md-3">
-                <div class="skill-box">
-                    <h3>MySQL</h3>
+                <div class="skill-card">
+                    <h4>MySQL</h4>
                 </div>
             </div>
 
@@ -70,151 +65,160 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="footer-area">
+<footer class="footer-section text-center">
 
     <h4>About Me</h4>
 
     <p>
-        Passionate Python Developer building modern web applications.
+        Bhavnesh Kumar | Python Developer
     </p>
 
 </footer>
 
+<!-- CSS -->
 <style>
 
 /* BODY */
 body{
-    background: #0f172a;
-    font-family: Arial, sans-serif;
-    color: white;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fc;
 }
 
 /* HERO SECTION */
 .hero-section{
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background:
-    linear-gradient(rgba(15,23,42,0.8),
-    rgba(15,23,42,0.9)),
-    url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2070');
-
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-content{
-    background: rgba(255,255,255,0.08);
-    padding: 35px 45px;
-    max-width: 750px;
-    margin: auto;
-    border-radius: 25px;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    min-height: 50vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-title{
-    font-size: 55px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease;
 }
 
-.hero-subtitle{
+.hero-text{
     font-size: 24px;
-    color: #cbd5e1;
+    color: #dbeafe;
+    animation: fadeInUp 1.2s ease;
 }
 
 /* BUTTONS */
-.custom-btn{
-    background: #38bdf8;
-    color: white;
+.hire-btn{
+    background: #00b894;
+    border: none;
     padding: 14px 35px;
-    border-radius: 40px;
+    border-radius: 50px;
     font-weight: bold;
     transition: 0.4s;
 }
 
-.custom-btn:hover{
-    background: #0ea5e9;
-    transform: scale(1.08);
-    box-shadow: 0 0 20px #38bdf8;
+.hire-btn:hover{
+    background: #019875;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-.custom-btn-outline{
-    border: 2px solid #38bdf8;
-    color: #38bdf8;
+.github-btn{
+    border-radius: 50px;
     padding: 14px 35px;
-    border-radius: 40px;
     font-weight: bold;
+    border: 2px solid white;
+    color: white;
     transition: 0.4s;
 }
 
-.custom-btn-outline:hover{
-    background: #38bdf8;
-    color: white;
-    transform: scale(1.08);
+.github-btn:hover{
+    background: white;
+    color: black;
+    transform: translateY(-5px);
 }
 
-/* SKILLS */
+/* SKILLS SECTION */
 .skills-section{
-    padding: 100px 0;
-    background: #111827;
+    background: #ffffff;
 }
 
-.section-heading{
-    font-size: 50px;
+.section-title{
+    font-size: 45px;
     font-weight: bold;
+    color: #0f172a;
 }
 
-.skill-box{
-    background: rgba(255,255,255,0.05);
-    padding: 40px;
+.skill-card{
+    background: white;
+    padding: 40px 20px;
     border-radius: 20px;
-    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     transition: 0.4s;
-    border: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
 }
 
-.skill-box:hover{
-    transform: translateY(-10px);
-    background: #1e293b;
-    box-shadow: 0 0 20px rgba(56,189,248,0.4);
-}
-
-.skill-box h3{
-    color: #38bdf8;
+.skill-card h4{
     font-weight: bold;
+    color: #2563eb;
+}
+
+.skill-card:hover{
+    transform: translateY(-12px) scale(1.05);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.skill-card:hover h4{
+    color: white;
 }
 
 /* FOOTER */
-.footer-area{
-    background: #020617;
-    padding: 40px;
-    text-align: center;
+.footer-section{
+    background: #0f172a;
+    color: white;
+    padding: 40px 20px;
 }
 
-.footer-area p{
-    color: #94a3b8;
+.footer-section h4{
+    font-weight: bold;
 }
 
-/* MOBILE */
+.footer-section p{
+    color: #cbd5e1;
+}
+
+/* ANIMATION */
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVE */
 @media(max-width:768px){
 
     .hero-title{
         font-size: 45px;
     }
 
-    .hero-content{
-        padding: 30px;
-    }
-
-    .hero-subtitle{
+    .hero-text{
         font-size: 18px;
     }
 
-    .section-heading{
+    .section-title{
         font-size: 35px;
     }
 
